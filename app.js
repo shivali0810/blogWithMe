@@ -15,7 +15,7 @@ const app = express()
 const dbURI = 'mongodb+srv://test:test123@nodetuts.by46h0r.mongodb.net/node-tuts?retryWrites=true&w=majority'
 mongoose.connect(dbURI,{useNewUrlParser: true, useUnifiedTopology: true})
  
-.then((result)=> app.listen(Process.env.PORT || 3000))
+.then((result)=> app.listen(process.env.PORT || 3000))
 
 .catch((err)=> console.log(err));
 
